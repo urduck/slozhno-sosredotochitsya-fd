@@ -19,5 +19,7 @@ example/
 
 "Описание проекта и чек-лист.pdf"
 
+.github/
+
 
 extract_pdf_text.py 
