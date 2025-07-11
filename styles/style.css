@@ -186,10 +186,6 @@
 .sunset {
   /* grid-area или grid-column/grid-row для десктопа будет в медиазапросах */
 }
-.ice-cream {}
-.tape {}
-.books {}
-.street {}
 
 .footer {
   display: grid;
@@ -203,6 +199,7 @@
   margin: auto;
 }
 
+/* Планшеты (≥768px) */
 @media (min-width: 768px) {
   .grid-header {
     display: grid;
@@ -288,6 +285,7 @@
   }
 }
 
+/* Десктопы (≥1024px) */
 @media (min-width: 1024px) {
   .header__theme-menu-list {
     flex-direction: row;
