@@ -1,5 +1,324 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--bg-img);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 18px;
+  font-family: var(--font-family);
+}
+
+.grid-header {
+  display: grid;
+  min-block-size: 100vh;
+  padding-top: 20px;
+  align-items: start;
+  padding: var(--padding-adaptive-main);
+}
+
+.header__theme-menu {
+  justify-self: end;
+  margin-block-start: 74px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-small);
+  padding: 0;
+}
+
+.header__theme-menu-button {
+  font-size: 18px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--menu-txt-clr);
+  text-transform: lowercase;
+  font-weight: 400;
+  width: 70px;
+  height: 26px;
+  padding: 0px 13px;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid #ff0070;
+  border-color: currentColor;
+  cursor: default;
+  pointer-events: none;
+}
+
+.header__theme-menu-button:hover {
+  border-color: var(--hover-brd-clr);
+  cursor: pointer;
+}
+
+.header__theme-menu-button:focus {
+  outline: 0;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end-color: currentColor;
+}
+
+.header__dark-theme {
+  position: absolute;
+  inset-inline-end: clamp(20px, 4vw, 30px);
+  inset-block-start: clamp(12px, 0.0286rem + 2.5445vw, 20px);
+  text-transform: uppercase;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 100%;
+  color: var(--txt-tlt-clr);
+  display: flex;
+  gap: var(--gap-small);
+  align-items: center;
+  visibility: var(--rec);
+}
+
+.header__dark-theme::after {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 2px var(--point-clr, #ff0070);
+  background: var(--point-clr, #ff0070);
+  inline-size: 9px;
+  block-size: 9px;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-end: 1px solid var(--corner-color, #ff0070);
+  border-block-start: 1px solid var(--corner-color, #ff0070);
+  inset-inline-end: var(--padding-adaptive);
+  inset-block-start: var(--padding-adaptive);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-start: 1px solid var(--corner-color, #ff0070);
+  border-block-end: 1px solid var(--corner-color, #ff0070);
+  inset-inline-start: var(--padding-adaptive);
+  inset-block-end: var(--padding-adaptive);
+}
+
+.title {
+  font-weight: 700;
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  line-height: 83%;
+  color: var(--hdr-txt-clr);
+  justify-self: start;
+  text-shadow: 4px 4px 0 var(--txt-shadow);
+  margin-block-start: 13px;
+}
+
+.title-decor {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  inline-size: clamp(355px, calc(100% / 2 - 10px), 500px);
+  margin-block-end: 12px;
+  background-color: var(--bg-txt-color);
+  color: var(--txt-color);
+}
+
+.main {
+  display: grid;
+  gap: var(--gap-large);
+  margin-block-start: 40px;
+  padding: var(--padding-adaptive-main);
+}
+
+.section__title {
+  color: var(--txt-tlt-clr);
+  font-size: 18px;
+}
+
+.section {
+  display: grid;
+  gap: 20px;
+}
+
+.cards-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.card__title {
+  font-size: 18px;
+  font-weight: 700;
+  background-color: var(--bg-txt-color);
+  color: var(--txt-color);
+}
+
+.card__text {
+  color: var(--txt-cards-clr);
+  line-height: 130%;
+  font-weight: 400;
+}
+
+.pictures__list {
+  display: grid;
+  gap: var(--gap-small);
+}
+
+.list-item__pictures {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+.sunset {
+  /* grid-area или grid-column/grid-row для десктопа будет в медиазапросах */
+}
+.ice-cream {}
+.tape {}
+.books {}
+.street {}
+
+.footer {
+  display: grid;
+  justify-items: center;
+  min-block-size: 100vh;
+  grid-template-columns: 1fr;
+  margin-block-start: 40px;
+}
+
+.title-footer {
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .grid-header {
+    display: grid;
+    min-block-size: 100vh;
+  }
+  .header {
+    display: grid;
+    justify-items: center;
+    min-block-size: 100vh;
+    grid-template-rows: 1fr min-content 1fr;
+    padding-inline-start: 0;
+  }
+  .header__theme-menu {
+    margin-block-start: 192px;
+  }
+  .header__dark-theme {
+    top: 23px;
+    right: 29px;
+  }
+  .header .title {
+    margin-block-start: 5px;
+  }
+  .title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+  .title-decor {
+    inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);
+    justify-self: end;
+    height: min-content;
+    margin-block-start: 160px;
+  }
+  .main {
+    gap: 80px;
+    margin-block-start: 60px;
+  }
+  .section {
+    grid-template-columns: var(--column-adaptive) 1fr;
+    column-gap: var(--gap-medium);
+  }
+  .section__pictures {
+    gap: 20px;
+  }
+  .cards__reasons {
+    grid-column-start: span 2;
+  }
+  .card__concentration {
+    display: grid;
+    gap: 12px;
+  }
+  .pictures__list {
+    display: grid;
+    gap: var(--gap-medium);
+    padding-inline-start: 0;
+  }
+  .sunset {
+    grid-column: span 2 / span 2;
+  }
+  .ice-cream {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+  }
+  .tape {
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+  .books {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+  .street {
+    grid-column: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+  .footer {
+    padding: var(--gap-medium);
+    margin-block-start: 60px;
+  }
+  .article-cards {
+    display: grid;
+    gap: var(--gap-small);
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__theme-menu-list {
+    flex-direction: row;
+    gap: var(--gap-small);
+    margin-inline-start: var(--gap-medium);
+  }
+  .header__theme-menu {
+    justify-self: center;
+    margin-block-start: 19px;
+  }
+  .title-decor {
+    margin-block-start: 114px;
+  }
+  .header .title {
+    margin-block-start: 0;
+  }
+  .section {
+    column-gap: 33px;
+  }
+  .section__pictures {
+    gap: var(--gap-medium);
+  }
+  .cards__reasons {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap-medium);
+  }
+  .card__what {
+    display: block;
+  }
+  .footer {
+    padding: var(--gap-medium);
+    margin-block-start: 60px;
+  }
 }

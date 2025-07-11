@@ -40,3 +40,22 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--txt-cards-clr, #f1b2ce);
+  outline-offset: 2px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

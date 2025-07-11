@@ -5,6 +5,18 @@
 */
 
 :root.theme-light {
+  --bg-img: url(../images/cover-image-light.png);
+  --menu-txt-clr: #353430;
+  --hdr-txt-clr: #ffc2e6;
+  --txt-shadow: #ff8dcb;
+  --bg-txt-color: #ff8dcb;
+  --txt-color: #353430;
+  --txt-cards-clr: #353430;
+  --txt-tlt-clr: #353430;
+  --corner-color: #353430;
+  --bg-clr: #fff1f7;
+  --rec: hidden;
+  --hover-brd-clr: rgba(50, 49, 45, 0.4);
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
@@ -12,5 +24,6 @@
 }
 
 .theme-light .page {
+  /* Здесь можно добавить специфичные стили для страницы в светлой теме */
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
