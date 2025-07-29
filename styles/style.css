@@ -248,11 +248,10 @@
 /* Корректировка медиазапросов для .main */
 @media (min-width: 768px) {
   .grid-header {
-    display: grid;
-    min-block-size: 100vh;
+    /* display: grid; */
+    /* min-block-size: 100vh; */
   }
   .header {
-    display: grid;
     justify-items: center;
     min-block-size: 100vh;
     grid-template-rows: 1fr min-content 1fr;
@@ -296,7 +295,6 @@
     gap: 12px;
   }
   .pictures__list {
-    display: grid;
     gap: var(--gap-medium);
     padding-inline-start: 0;
   }
