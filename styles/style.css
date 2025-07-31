@@ -186,10 +186,6 @@
   font-weight: 400;
 }
 
-.cards__concentration .card__title {
-  font-weight: 400;
-}
-
 .link {
   text-decoration: none;
 }
@@ -239,10 +235,6 @@
   margin: auto;
 }
 
-.article-cards {
-  display: grid;
-  gap: var(--gap-small);
-}
 
 .cards__concentration {
   margin-block-start: 22px;
@@ -326,7 +318,7 @@
     padding: var(--gap-medium);
     margin-block-start: 60px;
   }
-  .article-cards {
+  article-cards {
     display: grid;
     gap: var(--gap-small);
   }
