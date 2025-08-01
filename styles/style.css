@@ -177,6 +177,11 @@
 
 .card__title {
   font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.card__title_bold {
   font-weight: 700;
 }
 
@@ -242,10 +247,6 @@
 
 /* Корректировка медиазапросов для .main */
 @media (min-width: 768px) {
-  .grid-header {
-    /* display: grid; */
-    /* min-block-size: 100vh; */
-  }
   .header {
     justify-items: center;
     min-block-size: 100vh;
@@ -318,16 +319,11 @@
     padding: var(--gap-medium);
     margin-block-start: 60px;
   }
-  article-cards {
-    display: grid;
-    gap: var(--gap-small);
-  }
 }
 
 @media (min-width: 1024px) {
   .header__theme-menu-list {
     flex-direction: row;
-    gap: var(--gap-small);
     margin-inline-start: var(--gap-medium);
   }
   .header__theme-menu {
@@ -349,6 +345,10 @@
   .cards__reasons {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap-medium);
+    align-items: start;
+  }
+  .card__title {
+    line-height: 1.2;
   }
   .card__what {
     display: block;

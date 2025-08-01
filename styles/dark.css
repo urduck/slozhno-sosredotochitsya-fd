@@ -17,42 +17,27 @@
   --bg-clr: #000028;
   --rec: visible;
   --hover-brd-clr: rgba(255, 0, 112, 0.4);
+  --point-clr: #ff0070;
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
 }
 
-.theme-dark .page {
-  --bg-txt-color: #ff0070;
-  --txt-color: #000028;
-  --txt-cards-clr: #f1b2ce;
-  --hdr-txt-clr: #db00ff;
-  --hover-brd-clr: rgba(255, 0, 112, 0.4);
-  --bg-img: url(../images/cover-image-dark.png);
-  --txt-tlt-clr: #ff0070;
-  --txt-shadow: #ff0070;
-  --point-clr: #ff0070;
-  --corner-color: #ff0070;
-  --menu-txt-clr: #ff0070;
-  --bg-clr: #000028;
-  --rec: visible;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
+    --bg-img: url(../images/cover-image-dark.png);
+    --menu-txt-clr: #ff0070;
+    --hdr-txt-clr: #db00ff;
+    --txt-shadow: #ff0070;
     --bg-txt-color: #ff0070;
     --txt-color: #000028;
     --txt-cards-clr: #f1b2ce;
-    --hdr-txt-clr: #db00ff;
-    --hover-brd-clr: rgba(255, 0, 112, 0.4);
-    --bg-img: url(../images/cover-image-dark.png);
     --txt-tlt-clr: #ff0070;
-    --txt-shadow: #ff0070;
-    --point-clr: #ff0070;
     --corner-color: #ff0070;
-    --menu-txt-clr: #ff0070;
     --bg-clr: #000028;
     --rec: visible;
+    --hover-brd-clr: rgba(255, 0, 112, 0.4);
+    --point-clr: #ff0070;
   }
 }
