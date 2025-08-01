@@ -1,20 +1,23 @@
 .page {
+  background-color: var(--bg-clr);
   background-image: var(--bg-img);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 18px;
   font-family: var(--font-family);
+  min-height: 668px;
 }
 
 .header {
   display: grid;
   padding: var(--padding-adaptive-main);
+  min-height: 100vh;
 }
 
 .grid-header {
   display: grid;
-  min-block-size: 100vh;
+  min-height: 100vh;
   padding-top: 20px;
   align-items: start;
   padding: var(--padding-adaptive-main);
@@ -195,6 +198,8 @@
 
 .link {
   text-decoration: none;
+  color: inherit;
+  text-shadow: 1px 1px 0 var(--bg-txt-color), -1px -1px 0 var(--bg-txt-color), 1px -1px 0 var(--bg-txt-color), -1px 1px 0 var(--bg-txt-color);
 }
 
 .link:hover {
@@ -233,7 +238,7 @@
 .footer {
   display: grid;
   justify-items: center;
-  min-block-size: 100vh;
+  min-height: 100vh;
   grid-template-columns: 1fr;
   margin-block-start: 40px;
 }
@@ -251,7 +256,7 @@
 @media (min-width: 768px) {
   .header {
     justify-items: center;
-    min-block-size: 100vh;
+    min-height: 100vh;
     grid-template-rows: 1fr min-content 1fr;
     padding-inline-start: 0;
   }
@@ -319,6 +324,7 @@
   .footer {
     padding: var(--gap-medium);
     margin-block-start: 60px;
+    min-height: 100vh;
   }
 }
 
