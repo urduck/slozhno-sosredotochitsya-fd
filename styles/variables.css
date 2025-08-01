@@ -22,6 +22,6 @@
   --gap-medium: 20px;
   --gap-large: 50px;
   --font-family: "IBM Plex Mono", sans-serif;
-  --column-adaptive: minmax(237px, 315px);
+  --column-adaptive: minmax(237px, calc(100% / 3.25));
   --rec: visible;
 }
