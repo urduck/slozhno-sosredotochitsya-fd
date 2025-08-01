@@ -247,7 +247,6 @@
   margin: auto;
 }
 
-
 .cards__concentration {
   margin-block-start: 22px;
 }
@@ -291,13 +290,12 @@
   }
   .cards__reasons {
     grid-column-start: span 2;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--gap-medium);
   }
   .card__concentration {
     display: grid;
     gap: 12px;
   }
+
   .pictures__list {
     gap: var(--gap-medium);
     padding-inline-start: 0;
@@ -362,4 +360,5 @@
   .card__what {
     display: block;
   }
+
 }
