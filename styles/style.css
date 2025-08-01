@@ -291,6 +291,8 @@
   }
   .cards__reasons {
     grid-column-start: span 2;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap-medium);
   }
   .card__concentration {
     display: grid;
