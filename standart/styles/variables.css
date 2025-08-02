@@ -1,9 +1,0 @@
-:root {
-  --font-family: "IBM Plex Mono";
-  --min-height: 668px;
-  --regular-font-size: 18px;
-  --regular-line-height: 100%;
-  --decoration-gap: clamp(10px, 2.65vw, 20px);
-  --header-margin-left: min(10px, 20px - 2.6vw);
-  --corner-thickness: 1px;
-}
