@@ -26,6 +26,18 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Удалены дублирующиеся переменные, так как они уже определены в :root.theme-dark */
+    --bg-img: url(../images/cover-image-dark.png);
+    --menu-txt-clr: #ff0070;
+    --hdr-txt-clr: #db00ff;
+    --txt-shadow: #ff0070;
+    --bg-txt-color: #ff0070;
+    --txt-color: #000028;
+    --txt-cards-clr: #f1b2ce;
+    --txt-tlt-clr: #ff0070;
+    --corner-color: #ff0070;
+    --bg-clr: #000028;
+    --rec: visible;
+    --hover-brd-clr: rgba(255, 0, 112, 0.4);
+    --point-clr: #ff0070;
   }
 }

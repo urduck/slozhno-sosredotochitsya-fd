@@ -4,20 +4,25 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   font-size: 18px;
   font-family: var(--font-family);
-  min-height: 668px;
+  min-height: 768px;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .header {
   display: grid;
   padding: var(--padding-adaptive-main);
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 668px;
 }
 
 .grid-header {
   display: grid;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 668px;
   padding-top: 20px;
   align-items: start;
   padding: var(--padding-adaptive-main);
@@ -203,7 +208,8 @@
 
 .card__text {
   color: var(--txt-cards-clr);
-  line-height: 1.3;
+  font-size: 18px;
+  line-height: 23.4px;
   font-weight: 400;
 }
 
@@ -249,7 +255,8 @@
 .footer {
   display: grid;
   justify-items: center;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 668px;
   grid-template-columns: 1fr;
   margin-block-start: 40px;
 }
@@ -266,7 +273,8 @@
 @media (min-width: 768px) {
   .header {
     justify-items: center;
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 668px;
     grid-template-rows: 1fr min-content 1fr;
     padding-inline-start: 0;
   }
@@ -335,7 +343,8 @@
   .footer {
     padding: var(--gap-medium);
     margin-block-start: 60px;
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 668px;
   }
 }
 

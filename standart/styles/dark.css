@@ -1,0 +1,35 @@
+:root.theme-dark {
+  --page-bg-color: #000028;
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
+  --text-color: #000028;
+  --answer-text-color: #f1b2ce;
+  --button-color: #ff0070;
+  --border-color-opacity: rgb(255, 0, 112, 0.4);
+  --background-image: url("../images/cover-image-dark.png");
+  --decoration-color: #ff0070;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-bg-color: #000028;
+    --accent-color: #ff0070;
+    --title-color: #db00ff;
+    --text-color: #000028;
+    --answer-text-color: #f1b2ce;
+    --button-color: #ff0070;
+    --border-color-opacity: rgb(255, 0, 112, 0.4);
+    --background-image: url("../images/cover-image-dark.png");
+    --decoration-color: #ff0070;
+  }
+
+  .rec__empty::before,
+  .rec__empty::after {
+    display: inline-block;
+  }
+}
+
+.theme-light .rec__empty::before,
+.theme-light .rec__empty::after {
+  display: none;
+}
