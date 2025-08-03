@@ -16,8 +16,8 @@
   --corner-color: #ff0070;
   --menu-txt-clr: #ff0070;
   --bg-clr: #000028;
-  --padding-adaptive: clamp(10px, 0.0286rem + 2.5445vw, 20px);
-  --padding-adaptive-main: 0 clamp(10px, 0.0286rem + 2.5445vw, 20px);
+  --padding-adaptive: 10px;
+  --padding-adaptive-main: 0 10px;
   --gap-small: 10px;
   --gap-medium: 20px;
   --gap-large: 50px;

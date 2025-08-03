@@ -1,4 +1,4 @@
-.page {
+body.page {
   background-color: var(--bg-clr);
   background-image: var(--bg-img);
   background-attachment: fixed;
