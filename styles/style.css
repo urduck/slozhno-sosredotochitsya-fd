@@ -270,6 +270,11 @@ body.page {
   margin-block-start: 22px;
 }
 
+.card__concentration {
+  display: grid;
+  gap: 20px;
+}
+
 /* Корректировка медиазапросов для .main */
 @media (min-width: 768px) {
   .header {
