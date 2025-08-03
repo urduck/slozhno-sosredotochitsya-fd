@@ -173,13 +173,11 @@
 .section {
   display: grid;
   gap: 20px;
-  padding: 0 10px;
 }
 
 .section__pictures {
   display: grid;
   gap: 12px;
-  padding: 0 10px;
 }
 
 .card {
@@ -342,7 +340,6 @@
     grid-row-start: 3;
   }
   .footer {
-    padding: var(--gap-medium);
     margin-block-start: 60px;
     height: 100vh;
     min-height: 668px;
