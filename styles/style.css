@@ -357,16 +357,27 @@ body.page {
     padding: 0 20px;
     margin-inline: 0;
   }
+
+  /* Корректировка декоративных элементов для 768px */
+  .decorated-zone::before {
+    inset-inline-end: 20px;
+    inset-block-start: 20px;
+  }
+  
+  .decorated-zone::after {
+    inset-inline-start: 20px;
+    inset-block-end: 20px;
+  }
 }
 
 @media (min-width: 1024px) {
   .header__theme-menu-list {
     flex-direction: row;
-    margin-inline-start: var(--gap-medium);
+    gap: 10px;
   }
   .header__theme-menu {
     justify-self: center;
-    margin-block-start: 19px;
+    margin-block-start: 20px;
   }
   .title-decor {
     margin-block-start: 114px;
@@ -405,4 +416,14 @@ body.page {
     display: block;
   }
 
+  /* Корректировка декоративных элементов для 1024px */
+  .decorated-zone::before {
+    inset-inline-end: 20px;
+    inset-block-start: 20px;
+  }
+  
+  .decorated-zone::after {
+    inset-inline-start: 20px;
+    inset-block-end: 20px;
+  }
 }
