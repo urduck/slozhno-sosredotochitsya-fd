@@ -246,17 +246,17 @@ body.page {
 }
 
 .footer {
-  display: grid;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   min-height: 668px;
-  grid-template-columns: 1fr;
   margin-block-start: 40px;
   margin-inline: 0;
 }
 
 .title-footer {
-  margin: auto;
+  margin: 0;
 }
 
 .cards__concentration {
