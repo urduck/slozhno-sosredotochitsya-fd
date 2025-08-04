@@ -134,6 +134,7 @@ body.page {
   justify-self: start;
   text-shadow: 4px 4px 0 var(--txt-shadow);
   margin-block-start: 13px;
+  margin-inline-start: -5px;
 }
 
 .title-decor {
@@ -286,6 +287,8 @@ body.page {
   }
   .title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    justify-self: start;
+    margin-inline-start: -10px;
   }
   .title-decor {
     inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);
@@ -381,6 +384,7 @@ body.page {
   }
   .header .title {
     margin-block-start: 0;
+    margin-inline-start: -10px;
   }
   .main {
     padding: 0 20px;
