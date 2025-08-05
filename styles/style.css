@@ -134,7 +134,7 @@ body.page {
   justify-self: start;
   text-shadow: 4px 4px 0 var(--txt-shadow);
   margin-block-start: 13px;
-  margin-inline-start: -5px;
+  margin-inline-start: -15px;
 }
 
 .title-decor {
