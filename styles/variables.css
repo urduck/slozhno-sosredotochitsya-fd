@@ -4,24 +4,23 @@
 */
 
 :root {
-  --bg-txt-color: #ff0070;
-  --txt-color: #000028;
-  --txt-cards-clr: #f1b2ce;
-  --hdr-txt-clr: #db00ff;
-  --hover-brd-clr: rgba(255, 0, 112, 0.4);
-  --bg-img: url(../images/cover-image-dark.png);
-  --txt-tlt-clr: #ff0070;
-  --txt-shadow: #ff0070;
-  --point-clr: #ff0070;
-  --corner-color: #ff0070;
-  --menu-txt-clr: #ff0070;
-  --bg-clr: #000028;
-  --padding-adaptive: 10px;
-  --padding-adaptive-main: 0 10px;
-  --gap-small: 10px;
-  --gap-medium: 20px;
-  --gap-large: 50px;
-  --font-family: "IBM Plex Mono", sans-serif;
-  --column-adaptive: minmax(237px, calc(100% / 3.25));
-  --rec: visible;
+  --background-page: none;
+  --accent-color: #ff0070;
+  --decor-color:#ff0070;
+  --background-color:#000028;
+  --title-color: #000028;
+  --slogan-color: #db00ff;
+  --accent-color-hover: rgba(255, 0, 112, 0.4);
+  --text-color: #f1b2ce;
+  --main-font-family: "IBM Plex Mono", monospace;
+  --min-height: 668px;
+  --min-width: 375px;
+  --corner-size: 25px;
+  --header-text-width: clamp(22.1875rem, 21.6508rem + 2.2901vw, 22.75rem);
+  --padding-page: clamp(0.625rem, 0.029rem + 2.545vw, 1.25rem);
+  --font-size-page-text: 18px;
+  --slogan-size: clamp(9.8125rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --font-weight-page-title: 700;
+  --font-weight-page-text: 400;
+  --margin-block-main-content: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);
 }
