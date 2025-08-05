@@ -294,6 +294,11 @@
 }
 
 @media (width>767px) {
+  .header {
+    padding-left: 0;
+    padding-right: var(--padding-page);
+  }
+
   .header__cover-image {
     object-position: center;
   }
@@ -308,8 +313,8 @@
 
   .header__title {
     --slogan-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    justify-self: self-start;
-    margin-left: calc(-1 * var(--padding-page));
+    justify-self: start;
+    margin-left: 0;
   }
 
   .main-section {
