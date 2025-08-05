@@ -5,10 +5,14 @@
 */
 
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --background-page: none;
+  --accent-color: #ff0070;
+  --decor-color: #ff0070;
+  --background-color: #000028;
+  --title-color: #000028;
+  --slogan-color: #db00ff;
+  --accent-color-hover: rgba(255, 0, 112, 0.4);
+  --text-color: #f1b2ce;
 }
 
 .theme-dark .page {
