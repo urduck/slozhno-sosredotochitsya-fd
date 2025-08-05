@@ -35,14 +35,7 @@
   color: var(--title-color);
 }
 
-.theme-light .text-link {
-  color: var(--accent-color);
-  text-decoration: none;
-}
 
-.theme-light .text-link:hover {
-  color: var(--accent-color-hover);
-}
 
 .theme-light .header__theme-menu-button {
   color: var(--text-color);

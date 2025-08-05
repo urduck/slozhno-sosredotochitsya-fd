@@ -35,14 +35,7 @@
   color: var(--title-color);
 }
 
-.theme-dark .text-link {
-  color: var(--accent-color);
-  text-decoration: none;
-}
 
-.theme-dark .text-link:hover {
-  color: var(--accent-color-hover);
-}
 
 .theme-dark .header__theme-menu-button {
   color: var(--text-color);
@@ -80,5 +73,19 @@
 
 /* Смена кавера для темной темы */
 .theme-dark .header__cover-image {
+  content: url('../images/cover-image-dark.png');
+}
+
+/* Стили для авто-темы (темная по умолчанию) */
+.theme-auto .rec {
+  color: var(--accent-color);
+}
+
+.theme-auto .rec::before {
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+.theme-auto .header__cover-image {
   content: url('../images/cover-image-dark.png');
 }
