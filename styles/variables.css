@@ -19,7 +19,7 @@
   --header-text-width: clamp(22.1875rem, 21.6508rem + 2.2901vw, 22.75rem);
   --padding-page: clamp(0.625rem, 0.029rem + 2.545vw, 1.25rem);
   --font-size-page-text: 18px;
-  --slogan-size: clamp(9.8125rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --slogan-size: clamp(7.25rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --font-weight-page-title: 700;
   --font-weight-page-text: 400;
   --margin-block-main-content: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem);

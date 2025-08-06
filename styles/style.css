@@ -88,7 +88,7 @@
 .header__text {
   justify-self: end;
   align-self: center;
-  width: var(--header-text-width);
+  width: 100%;
   font-family: var(--main-font-family);
   font-weight: var(--font-weight-page-title);
   font-size: var(--font-size-page-text);
@@ -308,7 +308,7 @@
   }
 
   .header__text {
-    --header-text-width: clamp(22.75rem, -1.0625rem + 49.6094vw, 30.6875rem);
+    width: clamp(22.75rem, -1.0625rem + 49.6094vw, 30.6875rem);
   }
 
   .header__title {
@@ -377,7 +377,7 @@
   }
 
   .header__text {
-    --header-text-width: clamp(22.75rem, -1.187rem + 49.804vw, 30.688rem);
+    width: clamp(22.75rem, -1.187rem + 49.804vw, 30.688rem);
     justify-self: self-end;
   }
 
